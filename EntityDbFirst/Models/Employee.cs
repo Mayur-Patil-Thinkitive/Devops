@@ -3,18 +3,12 @@ using System.Collections.Generic;
 
 namespace EntityDbFirst.Models;
 
-public partial class Employee
+public class Employee
 {
-    
     public Guid Id { get; set; }
-
-    public string Name { get; set; } = null!;
-
-    public string Email { get; set; } = null!;
-
-    public long Salary { get; set; }
-
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public int Salary { get; set; } // Adjust this data type as needed
     public DateTime DateOfBirth { get; set; }
-
-    public string Department { get; set; } = null!;
+    public string Department { get; set; }
 }
